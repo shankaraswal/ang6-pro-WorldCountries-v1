@@ -1,0 +1,20 @@
+<div class="alert alert-danger">
+  <h2>{{_pageTitle}} <span class="badge badge-success">{{_allCount}}</span></h2>
+</div>
+<div class="row countryList">
+  <div class="col-md-6" *ngFor="let country of _allcountries">
+    <div class="card">
+      <h5 class="card-header">{{country.name}}</h5>
+      <div class="card-body row">
+        <div class="col-md-6"><img class="imgCountry" src={{country.flag}}></div>
+        <div class="col-md-6 desc">
+          <p><b>Country Capital: </b> {{country.capital}}</p>
+          <p><b>Region:</b> {{country.region}}</p>
+          <p><b>Country Population: </b> {{country.population}}</p>
+          <p><b>Currency: </b> <span  *ngFor="let currency of country.currencies">{{currency.name}}</span> </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

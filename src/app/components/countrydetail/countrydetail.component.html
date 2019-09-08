@@ -1,0 +1,19 @@
+<div class="alert alert-danger">
+  <h2>{{_countryDetail.name}} </h2>
+</div>
+
+<div class="media countryList border border-danger">
+  <img class="align-self-start mr-3 col-sm-5 imgCountry" src={{_countryDetail.flag}} alt="{{_countryDetail.name}}">
+  <div class="media-body  text-danger">
+    <h5 class="mt-0">Capital: {{_countryDetail.capital}}</h5>
+    <p><b>Region: </b>{{_countryDetail.region}}</p>
+    <p><b>Sub-Region: </b>{{_countryDetail.subregion}}</p>
+    <p><b>Country Popuoation: </b>{{_countryDetail.population}}</p>
+    <p><b>Numeric Code: </b>{{_countryDetail.numericCode}}</p>
+    <p><b>Calling Codes: </b>{{_countryDetail.callingCodes}}</p>
+    <p><b>Languages: </b> <span *ngFor="let item of _countryDetail.languages; trackBy: trackByFn;">
+      {{item.name}},</span></p>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </div>
+</div>

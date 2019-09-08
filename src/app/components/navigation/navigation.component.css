@@ -1,0 +1,5 @@
+.mainNavigation {margin-bottom: 2rem; padding:5px 0;}
+.mainNavigation .nav-item{ margin: 0 2rem; background-origin: padding-box;}
+.mainNavigation .nav-link{color:#fff;border-block-start:3px solid transparent;border-block-end:3px solid transparent}
+.mainNavigation .nav-link.active, .mainNavigation .nav-link:hover{border-block-start:3px solid rgba(255,193,7,0.4);border-block-end:3px solid rgba(255,193,7,0.4)}
+.mainNavigation .nav-link.active{border-block-start:3px solid #ffc107;border-block-end:3px solid #ffc107}

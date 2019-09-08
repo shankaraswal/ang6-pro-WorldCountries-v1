@@ -1,0 +1,14 @@
+.regName{
+  margin-top:-75px;
+  padding:0.5rem 1rem;
+  top:45%;
+  text-align: center;
+  color: #fff;
+  background-color:rgba(0,0,0,0.7);
+  border-top: 1px solid #fff;
+  border-bottom:1px solid #fff;
+  position:relative;
+  text-transform: capitalize;
+}
+
+.card-body{min-height: 210px;}

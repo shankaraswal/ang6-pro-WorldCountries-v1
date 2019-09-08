@@ -1,0 +1,16 @@
+
+<div class="alert alert-danger">
+  <h2>{{_pageTitle}} <span class="badge badge-success">{{_regionCount}}</span></h2>
+</div>
+<div class="row countryList">
+  <div class="col-md-4" *ngFor="let reg of _filtered">
+    <div class="card my-4">
+      <div class="card-body">
+        <img class="card-img-top" src="https://via.placeholder.com/200x150?text= Test Image" alt="Region Image">
+        <h3 class="regName">
+          <a class="text text-warning" routerLink='/allcountries' (click)="getRC(reg)" name={{reg}}> {{reg}}</a>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>

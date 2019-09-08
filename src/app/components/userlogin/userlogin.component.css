@@ -1,0 +1,9 @@
+.profile-img-card {
+    width: 70%;
+    margin: 1rem auto 0 !important;
+    display: block;
+    border-radius: 50%;
+    }
+.userLoginBucket{margin-bottom:5rem}
+.userLoginBucket .card{padding:0;}
+.userLoginBucket .formBucket{flex-direction:row}
